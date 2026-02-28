@@ -1,3 +1,17 @@
+# Python
+backend/.venv
+backend/__pycache__
+backend/*.pyc
+backend/.env
+
+# Node
+frontend/node_modules
+frontend/dist
+
+# General
+.DS_Store
+.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
