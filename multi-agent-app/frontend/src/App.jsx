@@ -230,7 +230,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Final output — only appears after run completes */}
       {finalOutput && (
         <div ref={finalRef} className="border-t-2 border-[#00ff9d] mx-6 my-6 pt-6">
           <div className="flex items-center gap-4 mb-6">
@@ -255,7 +254,6 @@ export default function App() {
         </div>
       )}
 
-      {/* Scroll hint — shown while running to tell user output is coming */}
       {running && (
         <div className="text-center py-4 text-xs text-gray-600 animate-pulse">
           Agents are working... final output will appear below when complete
