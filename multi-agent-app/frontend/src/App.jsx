@@ -94,7 +94,10 @@ export default function App() {
     setFinalOutput("")
     setNodes(initialNodes)
 
-    const ws = new WebSocket("wss://multi-agent-system-production-188e.up.railway.app/ws")
+  const wsUrl = window.location.hostname === "localhost"
+    ? "ws://127.0.0.1:8000/ws"
+    : "wss://multi-agent-system-production-188e.up.railway.app/ws"
+  const ws = new WebSocket(wsUrl)
 
     ws.onopen = () => {
       ws.send(JSON.stringify({ goal }))
