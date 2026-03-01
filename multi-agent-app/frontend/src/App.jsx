@@ -216,7 +216,7 @@ export default function App() {
         </div>
       </div>
 
-      {/* Sources */}
+      {/* Source */}
       {sources.length > 0 && (
         <div className="border-t border-[#1e1e2e] px-6 py-4">
           <div className="text-xs text-gray-500 mb-3 uppercase tracking-widest">Sources Searched</div>
